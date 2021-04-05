@@ -12,9 +12,9 @@
     - Attendees
     """,
     
-    'author': 'Odoo',
+    'author': 'Gaëtan',
     
-    'Website': 'https://.odoo.com'
+    'Website': 'https://www.odoo.com'
     
     'category': 'Training'
     'version': '0.1',
