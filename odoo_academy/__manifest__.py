@@ -14,7 +14,7 @@
     
     'author': 'Gaëtan',
     
-    'Website': 'https://www.odoo.com'
+    'Website': 'https://pacific-erp-odoo-tech-training-dev-2337732.dev.odoo.com/_odoo/paas/connect'
     
     'category': 'Training'
     'version': '0.1',
