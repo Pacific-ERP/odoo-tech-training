@@ -17,7 +17,7 @@
     
     'website': 'https://www.pacific-erp.com',
     
-    'category': 'customers apps'
+    'category': 'customers apps',
     'version': '0.1',
         
     'depends': ['base'],
