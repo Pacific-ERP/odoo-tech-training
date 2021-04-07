@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="spaceship_view_form">
+            <field name="name">spaceship.mission.form</field>
+            <field name="model">spaceship.mission</field>
+            <field name="arch" type="xml">
+                <form string="Spaceship Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <group>
+                                <field name="active"/>
+                            </group>
+                            <group>
+                                <field name="ship_type"/>
+                                <field name="fuel_type"/>
+                                <field name="number_of_passengers"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+            
+        <record model="ir.ui.view" id="spaceship_view_list">
+            <field name="name">spaceship.mission.list</field>
+            <field name="model">spaceship.mission</field>
+            <field name="arch" type="xml">
+                <tree string="Spaceship List">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="number_of_passengers"/>                                        
+                </tree>                
+            </field>
+        </record>            
+    </data>
+</odoo>

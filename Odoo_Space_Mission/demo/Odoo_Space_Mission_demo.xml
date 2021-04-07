@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record model="spaceship.mission" id="ss_100">
+            <field name="name">SS 100</field>
+            <field name="ship_type">rocket</field>
+            <field name="number_of_passengers">5</field>
+            <field name="description">100x200</field>
+        </record>
+        
+        <record model="spaceship.mission" id="ss_200">
+            <field name="name">SS 200</field>
+            <field name="ship_type">scientist missions</field>
+            <field name="number_of_passengers">20</field>
+            <field name="description">600x800</field>
+        </record>
+        
+        <record model="spaceship.mission" id="ss_300">
+            <field name="name">SS 300</field>
+            <field name="ship_type">biologist missions</field>
+            <field name="number_of_passengers">20</field>
+            <field name="description">600x800</field>
+        </record>            
+    </data>
+</odoo>
