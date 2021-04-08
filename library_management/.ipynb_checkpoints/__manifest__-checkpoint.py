@@ -23,11 +23,10 @@
     'depends': ['base'],
     
     'data': [
-        
-        
+        'views/library_books_views.xml',        
     ],
     
     'demo': [
-        'demo/library_management_demo.xml',        
+        'demo/library_management_demo.xml',
     ],
 }
