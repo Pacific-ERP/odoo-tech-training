@@ -20,7 +20,7 @@
                                 <field name="isbn_number"/>
                             </group>
                         </group>
-                            <notebook>
+                        <notebook>
                                 <page string="Description">
                                     <field name="description"/>
                                 </page>

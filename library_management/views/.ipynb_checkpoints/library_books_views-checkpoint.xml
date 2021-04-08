@@ -21,9 +21,9 @@
                             </group>
                         </group>
                         <notebook>
-                            <page string="Notes">
-                                <field name="description"/>
-                            </page>
+                                <page string="Description">
+                                    <field name="description"/>
+                                </page>
                         </notebook>
                     </sheet>
                 </form>

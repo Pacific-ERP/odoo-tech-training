@@ -23,8 +23,7 @@
     'depends': ['base'],
     
     'data': [
-        
-        
+        'views/library_books_views.xml',        
     ],
     
     'demo': [
