@@ -23,8 +23,9 @@
     'depends': ['base'],
     
     'data': [
-        'views/library_books_views.xml',        
-    ],
+        'views/library_management_views.xml',
+        'views/library_management_menuitems.xml',
+        ],
     
     'demo': [
         'demo/library_management_demo.xml',
