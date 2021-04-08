@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_library_management_admin" model="res.groups">
+        <field name="name">Library Management / Admin</field>
+    </record>
+    
+    <record id="Library_management_user_just_read" model="ir.rule">
+        <field name="name">Library users just read</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+        <field name="domain_force">[('active','=',True)]</field>
+        <field name="model_id" ref="model_library_books"/>
+    </record>
+</odoo>
