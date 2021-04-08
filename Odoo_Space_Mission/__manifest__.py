@@ -19,12 +19,11 @@
     'depends': ['base'],
     
     'data': [
-        
-        
+        'views/Odoo_Space_Mission_views.xml',
+        'views/Odoo_Space_Mission_menuitem.xml',
     ],
     
     'demo': [
-        
-        
-    ],   
+        'demo/Odoo_Space_Mission_demo.xml',        
+    ],
 }

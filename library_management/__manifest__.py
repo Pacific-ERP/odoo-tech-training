@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Library Managmeent',
+    'name': 'Library Management',
     
-    'summary': """App tu manage a library""",
+    'summary': """App to manage a library""",
     
     'description': """
         Library management module for:
         - manage books
         - manage customers
         - customer checking out books
-        - custoimer checking organizing books and rental
+        - customer checking organizing books and rental
     """,
     
     'author': 'Gaëtan',
@@ -23,12 +23,11 @@
     'depends': ['base'],
     
     'data': [
-        
-        
-    ],
+        'views/library_management_views.xml',
+        'views/library_management_menuitems.xml',
+        ],
     
     'demo': [
-        
-        
+        'demo/library_management_demo.xml',
     ],
 }
