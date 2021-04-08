@@ -25,6 +25,8 @@
     'data': [
         'views/library_management_views.xml',
         'views/library_management_menuitems.xml',
+        'security/library_management_security.xml',
+        'security/ir.model.access.csv',
         ],
     
     'demo': [
