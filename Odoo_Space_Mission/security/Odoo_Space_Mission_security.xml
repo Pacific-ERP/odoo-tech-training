@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_space_mission_admin" model="res.groups">
+        <field name="name">Space mission / Admin</field>
+    </record>
+    
+    <record id="only_spacecrew_modify_not_delete" model="ir.rule">
+        <field name="name">Only Active Spaceship Can Be Modified</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="0"/>
+        <field name="domain_force">[('active','=',True)]</field>
+        <field name="model_id" ref="model_spaceship_mission"/>
+    </record>
+    
+    <record id="general_just_read" model="ir.rule">
+        <field name="name">General user can just read</field>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+        <field name="domain_force">[('active','=',True)]</field>
+        <field name="model_id" ref="model_spaceship_mission"/>        
+    </record>
+</odoo>

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo.exceptions import UserError
 
 class Spaceship(models.Model):
     
@@ -25,3 +26,13 @@ class Spaceship(models.Model):
                                  copy=False)
     
     number_of_passengers= fields.Integer(string='Number of Passengers', required=True)
+    
+    largeur = fields.Float(string='Largeur', default=0.00)
+    
+    longueur = fields.Float(string='Longueur', default=0.00)
+    
+    @api.constrains('largeur', 'longueur')
+    def _onchange_longueur(self):
+        for record in self:
+            if record.longueur < record.largeur:
+                raise UserError('La longueur ne peut pas être plus petite que la largeur')
