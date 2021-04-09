@@ -21,6 +21,8 @@
     'data': [
         'views/Odoo_Space_Mission_views.xml',
         'views/Odoo_Space_Mission_menuitem.xml',
+        'security/Odoo_Space_Mission_security.xml',
+        'security/ir.model.access.csv',
     ],
     
     'demo': [
