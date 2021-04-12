@@ -23,6 +23,7 @@
         'views/Odoo_Space_Mission_menuitem.xml',
         'security/Odoo_Space_Mission_security.xml',
         'security/ir.model.access.csv',
+        'views/mission_views.xml',
     ],
     
     'demo': [

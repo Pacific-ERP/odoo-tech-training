@@ -12,6 +12,17 @@
             </field>            
         </record>
         
+        <record model="ir.actions.act_window" id="mission_list_action">
+            <field name="name">Missions</field>
+            <field name="res_model">mission.mission</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your first mission
+                </p>
+            </field>
+        </record>
+        
         <menuitem name="Space Mission"
                   id="menu_space_mission"
                   sequence="1"/>
@@ -19,5 +30,8 @@
         
         <menuitem id="menu_space_mission_Spaceships" name="Spaceships" parent="menu_space_mission_sub" sequence="3"
                   action="spaceship_list_action"/>
+        
+        <menuitem id="manu_mission_mission" name="Missions" parent="menu_space_mission_sub" sequence="4"
+                  action="mission_list_action"/>
     </data>
 </odoo>

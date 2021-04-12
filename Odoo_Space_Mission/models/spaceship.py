@@ -31,6 +31,10 @@ class Spaceship(models.Model):
     
     longueur = fields.Float(string='Longueur', default=0.00)
     
+    mission_ids = fields.One2many(comodel_name='mission.mission',
+                                  inverse_name='spaceship_id',
+                                  string='Missions')
+    
     @api.constrains('largeur', 'longueur')
     def _onchange_longueur(self):
         for record in self:
