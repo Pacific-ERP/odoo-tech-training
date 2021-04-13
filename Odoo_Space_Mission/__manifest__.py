@@ -16,7 +16,7 @@
     'category': 'Space travel',
     'version': '0.1',
     
-    'depends': ['base'],
+    'depends': ['sale'],
     
     'data': [
         'views/Odoo_Space_Mission_views.xml',
@@ -24,6 +24,7 @@
         'security/Odoo_Space_Mission_security.xml',
         'security/ir.model.access.csv',
         'views/mission_views.xml',
+        'views/sale_views_inherit.xml',
     ],
     
     'demo': [
